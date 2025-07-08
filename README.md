@@ -1,0 +1,50 @@
+## Project Description
+
+This is part of a multi-system authentication where a user logs into the foodpanda-app, they will be automatically authenticated into foodpanda-app without needing to log in again.
+
+
+## Requirements
+
+PHP >= 8.2
+Laravel 12.x
+Composer
+Node.js and NPM
+MySQL
+Laravel Breeze
+
+
+## Installation
+
+1. Clone the Repository
+git clone https://github.com/snigdho991/foodpanda-app.git
+cd foodpanda-app
+
+2. Install Dependencies
+composer install
+npm install && npm run dev
+
+3. Configure Environment
+Copy .env.example to .env:
+cp .env.example .env
+
+Update the following in your .env:
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=foodpanda
+DB_USERNAME=root
+DB_PASSWORD=
+
+4. Generate App Key
+php artisan key:generate
+
+5. Run Migrations
+php artisan migrate
+
+7. Serve the App
+php artisan serve --port=8001
+
+
+## Testing
+Email: test@example.com
+Password: password
