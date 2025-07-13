@@ -41,8 +41,12 @@ php artisan key:generate
 5. Run Migrations
 php artisan migrate
 
+6. Run Tinker and Generate Test Users
+php artisan tinker
+    >>> \App\Models\User::create(['name'=>'Test User', 'email'=>'test@example.com', 'password'=>bcrypt('password')])
+
 7. Serve the App
-php artisan serve --port=8001
+php artisan serve --port=8000
 
 
 ## Testing
